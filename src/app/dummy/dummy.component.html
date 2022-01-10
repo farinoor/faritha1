@@ -4,3 +4,15 @@
 <input type="text" value="hi" />
 <input [value]="hello1" />
 <button (click)="welcome()">WELCOME</button>
+<p>DUMMY</p>
+<div>
+  <p>hidden directive</p>
+  <p [hidden]="conditionApply">Sample text</p>
+</div>
+<div>
+  <p>ngif directive</p>
+  <p *ngIf="!conditionApply">Sample text</p>
+</div>
+<div>
+  <button (click)="changing()">click</button>
+</div>
