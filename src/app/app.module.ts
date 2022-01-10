@@ -17,7 +17,6 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'dummy', component: DummyComponent },
   { path: 'employee', component: EmployeeComponent },
-  { path: 'student', component: StudentComponent },
 ];
 
 @NgModule({
@@ -30,7 +29,6 @@ const appRoutes: Routes = [
     LoginComponent,
     NavbarComponent,
     EmployeeComponent,
-    StudentComponent,
   ],
   bootstrap: [AppComponent],
 })
