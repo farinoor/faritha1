@@ -1,7 +1,14 @@
-<div>
-  <p *ngFor="let variable of ArrayValue">employee works!!{{ variable }}</p>
-</div>
-<div>
-  <label>NAME:</label>
-  <Label>Faritha</Label>
+<div class="employee" *ngFor="let item of employeeGroup">
+  <img
+    src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+    height="100"
+    width="100"
+  />
+  <div>
+    <div>Name:{{ item.name }}</div>
+
+    <div>Email:{{ item.email }}</div>
+
+    <div>Mobile:{{ item.mobile }}</div>
+  </div>
 </div>

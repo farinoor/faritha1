@@ -3,14 +3,28 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.css']
+  styleUrls: ['./employee.component.css'],
 })
 export class EmployeeComponent implements OnInit {
-  ArrayValue=[10,2,3,7,9];
+  employeeGroup = [
+    {
+      name: 'Faritha',
+      email: 'farithanoormohammed@gmail.com',
+      mobile: '123456789',
+    },
+    {
+      name: 'Noor',
+      email: 'noors4u@gmail.com',
+      mobile: '123456789',
+    },
+    {
+      name: 'Umar',
+      email: 'farithanoormohammed@gmail.com',
+      mobile: '123456789',
+    },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
