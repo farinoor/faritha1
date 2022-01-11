@@ -1,0 +1,9 @@
+div {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  background-color: coral;
+}
+div p {
+  background-color: lightblue;
+}

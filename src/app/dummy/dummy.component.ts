@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DummyComponent implements OnInit {
   conditionApply = true;
+  TsArray = [1, 2, 3, 4, 5];
+  //conditionApply = false;'
+
   constructor() {}
 
   ngOnInit() {}
@@ -14,6 +17,7 @@ export class DummyComponent implements OnInit {
     if (this.conditionApply) this.conditionApply = false;
     else this.conditionApply = true;
   }
+
   hello() {
     // alert('hello');
     this.controlType = this.controlType == 'text' ? 'password' : 'text';

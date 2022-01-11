@@ -10,13 +10,15 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmployeeComponent } from './employee/employee.component';
-import { StudentComponent } from './student/student.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'dummy', component: DummyComponent },
   { path: 'employee', component: EmployeeComponent },
+
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 @NgModule({
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     LoginComponent,
     NavbarComponent,
     EmployeeComponent,
+    PagenotfoundComponent,
   ],
   bootstrap: [AppComponent],
 })
