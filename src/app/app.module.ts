@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'employee', component: EmployeeComponent },
 
   { path: '**', component: PagenotfoundComponent },
+  { path: 'pagination', component: PaginationComponent },
 ];
 
 @NgModule({
