@@ -20,7 +20,13 @@ select {
   margin-right: 10px;
 }
 .button-det {
-  background-color: aqua;
-  border-color: aqua;
+  background-color: purple;
+  border-color: purple;
   color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-det:hover {
+  background-color: #bf0000;
 }
