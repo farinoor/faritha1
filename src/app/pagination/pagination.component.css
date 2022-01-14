@@ -1,0 +1,26 @@
+table,
+th,
+td {
+  border: 1px solid green;
+  border-collapse: collapse;
+  padding: 10px;
+}
+th {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+select {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.button-det {
+  background-color: aqua;
+  border-color: aqua;
+  color: white;
+}

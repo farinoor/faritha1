@@ -18,9 +18,8 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'dummy', component: DummyComponent },
   { path: 'employee', component: EmployeeComponent },
-
-  { path: '**', component: PagenotfoundComponent },
   { path: 'pagination', component: PaginationComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 @NgModule({
