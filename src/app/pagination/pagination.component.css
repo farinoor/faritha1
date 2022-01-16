@@ -30,3 +30,10 @@ select {
 .button-det:hover {
   background-color: #bf0000;
 }
+.option:hover {
+  background-color: green;
+  cursor: pointer;
+}
+.option {
+  background-color: palevioletred;
+}
