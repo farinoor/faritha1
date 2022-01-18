@@ -1,15 +1,24 @@
 <div class="m-b-10">
-  <button class="option"><<</button>
-  <button class="option"><</button>
-  <button class="option">1</button>
-  <button class="option">2</button>
-  <button class="option">></button>
-  <button class="option">>></button>
+  <button class="option" (click)="displaypage(1)"><<</button>
+  <button class="option" (click)="displaypage(page - 1)"><</button>
+  <button class="option" (click)="displaypage(1)">1</button>
+  <button class="option" (click)="displaypage(2)">2</button>
+  <button class="option" (click)="displaypage(3)">3</button>
+  <button class="option" (click)="displaypage(4)">4</button>
+  <button class="option" (click)="displaypage(5)">5</button>
+  <button class="option" (click)="displaypage(page + 1)">></button>
+  <button class="option" (click)="displaypage(page + 1)">>></button>
   <select name="page" id="page">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
+    <option value="4">5</option>
+    <option value="4">6</option>
+    <option value="4">7</option>
+    <option value="4">8</option>
+    <option value="4">9</option>
+    <option value="4">10</option>
   </select>
   <input type="text" placeholder="Search" />
   <button class="button-det">Search</button>
@@ -17,14 +26,14 @@
 
 <table width="100%">
   <tr>
-    <th>POSTAL ID</th>
-    <th>ID</th>
-    <th>NAME</th>
-    <th>EMAIL</th>
-    <th>BODY</th>
+    <th>{{ 'postalid' | uppercase }}</th>
+    <th>{{ 'id' | uppercase }}</th>
+    <th>{{ 'name' | uppercase }}</th>
+    <th>{{ 'email' | uppercase }}</th>
+    <th>{{ 'body' | uppercase }}</th>
   </tr>
-  <tr *ngFor="let item of workersList">
-    <td>{{ item.postal }}</td>
+  <tr *ngFor="let item of filtercomments">
+    <td>{{ item.postId }}</td>
     <td>{{ item.id }}</td>
     <td>{{ item.name }}</td>
     <td>{{ item.email }}</td>
