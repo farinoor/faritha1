@@ -7,7 +7,9 @@
   <button class="option" (click)="displaypage(4)">4</button>
   <button class="option" (click)="displaypage(5)">5</button>
   <button class="option" (click)="displaypage(page + 1)">></button>
-  <button class="option" (click)="displaypage(page + 1)">>></button>
+  <button class="option" (click)="displaypage(comments.length / pageLimit)">
+    >>
+  </button>
   <select name="page" id="page">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -22,6 +24,7 @@
   </select>
   <input type="text" placeholder="Search" />
   <button class="button-det">Search</button>
+  <p>current page:{{ page }}</p>
 </div>
 
 <table width="100%">
