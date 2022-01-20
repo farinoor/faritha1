@@ -1,18 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-dummy',
   templateUrl: './dummy.component.html',
   styleUrls: ['./dummy.component.css'],
 })
-export class DummyComponent implements OnInit {
+export class DummyComponent implements OnInit, OnDestroy {
   conditionApply = true;
   TsArray = [1, 2, 3, 4, 5];
   //conditionApply = false;'
 
-  constructor() {}
+  constructor() {
+    // when the class object created
+    console.log('constructor');
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // when the component first loads in the dom
+    console.log('ngOnInit');
+  }
+  ngOnDestroy() {
+    // when the component destroy from the dom
+    console.log('ngOnDestroy');
+  }
   changing() {
     if (this.conditionApply) this.conditionApply = false;
     else this.conditionApply = true;

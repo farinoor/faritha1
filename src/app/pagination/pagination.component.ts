@@ -3567,7 +3567,7 @@ export class PaginationComponent implements OnInit {
     },
   ];
   filtercomments = [];
-  pageLimit = 10;
+  pageLimit = 15;
   page = 1;
   constructor() {
     this.displaypage(2);
