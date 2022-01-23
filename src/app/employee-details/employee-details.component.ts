@@ -14,7 +14,7 @@ export class EmployeeDetailsComponent implements OnInit {
     },
   ];
   constructor() {}
-  back() {}
+  backDetails() {}
 
   ngOnInit() {}
 }
