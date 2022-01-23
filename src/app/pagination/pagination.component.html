@@ -10,17 +10,17 @@
   <button class="option" (click)="displaypage(comments.length / pageLimit)">
     >>
   </button>
-  <select name="page" id="page">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="4">5</option>
-    <option value="4">6</option>
-    <option value="4">7</option>
-    <option value="4">8</option>
-    <option value="4">9</option>
-    <option value="4">10</option>
+  <select (change)="changepageLimit()" name="page" id="page">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="30">30</option>
+    <!-- <option value="35">35</option>
+    <option value="40">40</option>
+    <option value="45">45</option>
+    <option value="50">55</option> -->
   </select>
   <input type="text" placeholder="Search" />
   <button class="button-det">Search</button>

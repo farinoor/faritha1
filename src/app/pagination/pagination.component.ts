@@ -3567,7 +3567,7 @@ export class PaginationComponent implements OnInit {
     },
   ];
   filtercomments = [];
-  pageLimit = 15;
+  pageLimit = 10;
   page = 1;
   constructor() {
     this.displaypage(2);
@@ -3575,10 +3575,20 @@ export class PaginationComponent implements OnInit {
 
   ngOnInit() {}
 
-  displaypage(page) {
+  displaypage(page: number) {
+    page = Math.ceil(page);
     let start = (page - 1) * this.pageLimit;
     let end = start + this.pageLimit;
     this.filtercomments = this.comments.slice(start, end);
     this.page = page;
+  }
+  search() {}
+  changepageLimit() {
+    console.log(event);
+    console.log(event?.target);
+    // console.log(event?.target?.value);
+    console.log((<HTMLInputElement>event?.target).value);
+    this.pageLimit = parseInt((<HTMLInputElement>event?.target).value);
+    this.displaypage(1);
   }
 }
