@@ -1,0 +1,17 @@
+<div>
+  <div class="employee" *ngFor="let item of employeeDetails">
+    <img
+      src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+      height="100"
+      width="100"
+    />
+    <div>
+      <div>Name:{{ item.name }}</div>
+
+      <div>Email:{{ item.email }}</div>
+
+      <div>Mobile:{{ item.mobile }}</div>
+      <button (click)="back()">BACK</button>
+    </div>
+  </div>
+</div>

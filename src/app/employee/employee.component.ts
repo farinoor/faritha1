@@ -25,6 +25,7 @@ export class EmployeeComponent implements OnInit {
   ];
 
   constructor() {}
+  viewDetails() {}
 
   ngOnInit() {}
 }
