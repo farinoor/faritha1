@@ -12,12 +12,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'dummy', component: DummyComponent },
   { path: 'employee', component: EmployeeComponent },
+  { path: 'employee-details', component: EmployeeDetailsComponent },
   { path: 'pagination', component: PaginationComponent },
   { path: '**', component: PagenotfoundComponent },
 ];
