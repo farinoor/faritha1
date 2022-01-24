@@ -36,6 +36,7 @@ const appRoutes: Routes = [
     EmployeeComponent,
     PagenotfoundComponent,
     PaginationComponent,
+    EmployeeDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })

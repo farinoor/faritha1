@@ -10,6 +10,8 @@
     <div>Email:{{ item.email }}</div>
 
     <div>Mobile:{{ item.mobile }}</div>
-    <button (click)="viewDetails()">VIEW DETAILS</button>
+    <button routerLink="/employee-details" (click)="viewDetails()">
+      VIEW DETAILS
+    </button>
   </div>
 </div>

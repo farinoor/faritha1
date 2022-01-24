@@ -3582,7 +3582,11 @@ export class PaginationComponent implements OnInit {
     this.filtercomments = this.comments.slice(start, end);
     this.page = page;
   }
-  search() {}
+  search() {
+    // get the name from user
+    //   for each element in array check if it is matching
+    // show the matching example
+  }
   changepageLimit() {
     console.log(event);
     console.log(event?.target);
