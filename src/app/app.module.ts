@@ -13,14 +13,23 @@ import { EmployeeComponent } from './employee/employee.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { AuthGuard } from './auth.guard';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'dummy', component: DummyComponent },
-  { path: 'employee', component: EmployeeComponent },
-  { path: 'employee-details', component: EmployeeDetailsComponent },
-  { path: 'pagination', component: PaginationComponent },
+  { path: 'dummy', component: DummyComponent, canActivate: [AuthGuard] },
+  { path: 'employee', component: EmployeeComponent, canActivate: [AuthGuard] },
+  {
+    path: 'employee-details',
+    component: EmployeeDetailsComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'pagination',
+    component: PaginationComponent,
+    canActivate: [AuthGuard],
+  },
   { path: '**', component: PagenotfoundComponent },
 ];
 
