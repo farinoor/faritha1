@@ -1,17 +1,21 @@
-<div class="employee" *ngFor="let item of employeeGroup">
+<div class="employee" *ngFor="let item of employeeArray">
   <img
     src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
     height="100"
     width="100"
   />
   <div>
-    <div>Name:{{ item.name }}</div>
+    <div>Name:{{ item.Name }}</div>
+    <!-- <div>Age:{{ item.Age }}</div>
+    <div>Email:{{ item.Email }}</div>
+    <div>Street:{{ item.Street }}</div>
+    <div>City:{{ item.City }}</div>
+    <div>Zip:{{ item.Zip }}</div>
+    <div>Region: {{ item.Region }}</div>
+    <div>Country: {{ item.Country }}</div>
+    <div>Info:{{ item.Info }}</div> -->
+    <div>EmployeeID:{{ item.EmployeeID }}</div>
 
-    <div>Email:{{ item.email }}</div>
-
-    <div>Mobile:{{ item.mobile }}</div>
-    <button routerLink="/employee-details" (click)="viewDetails()">
-      VIEW DETAILS
-    </button>
+    <button routerLink="/employee-details" (click)="viewDetails()">VIEW</button>
   </div>
 </div>

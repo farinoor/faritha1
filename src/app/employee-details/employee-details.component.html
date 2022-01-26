@@ -6,58 +6,51 @@
       width="100"
     />
     <div>
-      <div>Name:Faritha</div>
-
-      <div>Email:farinoor@gmail.com</div>
-
-      <div>Mobile:90892323232323</div>
       <button routerLink="/employee">Back</button>
     </div>
   </div>
   <div>Employee Details</div>
   <div>
-    <table style="width:50%">
-      <tr>
-        <td>Name</td>
-        <td>Faritha</td>
-      </tr>
-      <tr>
-        <td>Age</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td>farinoor@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Street</td>
-        <td>nehru nagar</td>
-      </tr>
-      <tr>
-        <td>City</td>
-        <td>Velachery</td>
-      </tr>
+    <div>Name:Faritha</div>
 
-      <tr>
-        <td>Zip</td>
-        <td>600042</td>
-      </tr>
-      <tr>
-        <td>Country</td>
-        <td>India</td>
-      </tr>
-      <tr>
-        <td>Employee ID</td>
-        <td>600042</td>
-      </tr>
-      <tr>
-        <td>Date Of Joining</td>
-        <td>10/12/2020</td>
-      </tr>
-      <tr>
-        <td>Mobile No</td>
-        <td>6000422222</td>
-      </tr>
-    </table>
+    <div>Email:farinoor@gmail.com</div>
+
+    <div>Mobile:90892323232323</div>
+    <div>
+      <table align="right" style="width:50%">
+        <tr>
+          <th>Name</th>
+          <td>{{ employee.Name }}</td>
+        </tr>
+        <tr>
+          <th>age</th>
+          <td>{{ employee.Age }}</td>
+        </tr>
+        <tr>
+          <th>street</th>
+          <td>{{ employee.Street }}</td>
+        </tr>
+        <tr>
+          <th>city</th>
+          <td>{{ employee.City }}</td>
+        </tr>
+        <tr>
+          <th>zip</th>
+          <td>{{ employee.Zip }}</td>
+        </tr>
+        <tr>
+          <th>region</th>
+          <td>{{ employee.Region }}</td>
+        </tr>
+        <tr>
+          <th>country</th>
+          <td>{{ employee.Country }}</td>
+        </tr>
+        <tr>
+          <th>Info</th>
+          <td>{{ employee.Info }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
