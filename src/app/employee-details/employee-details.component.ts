@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model/employee.model';
 
 @Component({
   selector: 'app-employee-details',
@@ -13,7 +14,7 @@ export class EmployeeDetailsComponent implements OnInit {
       mobile: '123456789',
     },
   ];
-  employee = {
+  employee: Employee = {
     Name: 'Aurora',
     Age: 53,
     Email: 'ante.blandit@disparturient.ca',
