@@ -1407,5 +1407,11 @@ export class EmployeeService {
       EmployeeID: 200,
     },
   ];
+  selectedEmployee=0;
   constructor() {}
+  getEmployee(): Employee {
+    return this.employeeArray[this.selectedEmployee];
+  }
+
+  
 }
